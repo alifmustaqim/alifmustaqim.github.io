@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="shortcut icon" type="image" href="images/ball.png"/>
+
+    <title>Mus & Bros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<audio id="myAudio">
+      
+        <source src="music/Dragon Ball Opening (Japanese) [HD].mp3" type="audio/mpeg">
+        <source src="music/Dragon Ball Opening (Japanese) [HD].ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+</audio>
+
+<body style="background-color:lightslategrey">
+    
+<!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(37, 37, 41, 0.904)">
+            <div class="d-flex flex-grow-1" id="navbur">
+                <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+                <img src="./images/ball.png"  alt="ball">
+                <a class="navbar-brand d-none d-lg-inline-block font" style="color:darkgoldenrod" href="#">
+                   DRAGON BALL BRO'S  
+                </a>
+               
+                    <div class="w-100 text-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                         </button>
+                    </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="#ite" class="nav-link menu-item font" style="color:darkgoldenrod">UNSATISFIED?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#aboutmus" class="nav-link  menu-item font" style="color:darkgoldenrod">ABOUT ME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#slidesikit" class="nav-link  menu-item font" style="color:darkgoldenrod">WHAT I GOT</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+<!-- greetjs -->
+        <div  class="container-fluid text-center">
+
+            <div id ="toper" class="row">
+                <div class="col-3 bg-warning topad"></div>
+                
+                <div class="col-6   "style="background-color:rgba(255, 204, 0, 0.89)">  
+                    <img id="greet" src ="images/goku_ssj4_chibi_by_maffo1989_d3un7gq-pre.png">
+                    <h1>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "OSSU! ORRA MUSTAQIM!!", "WELCOME TO MY PAGE BROS !!", " I HOPE THE KAME-STYLE ALWAYS WITH YOU !",
+                        "KAAAAAAAA....MEEEE...H...","JUST KIDDING BROS, SORRY FOR THE UNSATISFIED FEEL :P"," BUT...HOW ABOUT YOU.. CHECKOUT THE TOP 10 KAMEHAMEHA VIDEO BELOW!!!" ]'>
+                        <span class="wrap"></span>
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="col-3 bg-warning"></div>
+
+            </div>
+
+        </div><br/>
+
+<!-- card -->
+<div class="container-fluid">
+    <div id="cardanote">
+            <div class="carda text-center">
+                    <div class="card-header "style="background-color:#ff4c4c">
+                        <strong>Deep Apologise</strong>
+                    </div>
+    
+                    <div class="card-body" style="background-color:whitesmoke">
+                        <h5 class="card-title">"Big Update On Going"</h5>
+                        <p class="card-text">OSHH.. BROS!!! We Are Sorry On The Trouble You Had. We Are <strong><em>Currently Updating Our Website Content.</em></strong> Stay The Kamehameha Bros ! </p>
+                        <a href="#ite " class="btn btn-primary">Go Watch Scenery</a>
+                    </div>
+    
+                    <div class="card-footer text-muted" style="background-color:whitesmoke" >
+                        2 days ago
+                    </div>
+              </div>
+        
+    </div>
+          <br/>
+</div>
+<!-- scenerycss -->
+          <div id="ite" class="scenery">
+                <div> 
+                        <button onclick="playAudio()" type="button">🔊</button>
+                        <button onclick="pauseAudio()" type="button">🔇</button> 
+                </div>
+                &nbsp;
+                
+                <div class="sun"></div>
+                <div> <img class="goku right flip" src="images/kid_goku_by_maffo1989_d4853um-fullview.png" ></div>
+                <div class="cloud left"></div>
+                <div class="cloud left bigger lower faster flip"></div>
+                <div class="mountains"></div>
+                
+
+          </div> <br/>
+
+<!-- aboutme & coresel -->
+            <div  class="container-fluid text-center">
+
+                    <div id ="toper" class="row">
+                        <div class="col-4 bg-primary topad ">
+                                <div id="aboutmus" class="card" style="width: 20rem;">
+                                        <div class="card-body">
+                                            <img id="logo" src="images/logo.png" class="card-img-top" alt="logo">
+                                            <h5 class="card-title">About Mustaqim-San </h5>
+                                            <p class="card-text">I am the hope of the universe. I am the answer to all living things that cry out for Full Dragon Ball Series.😜</p> 	
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                </div>
+                        </div>
+                        
+                        <div id= "slidesikit" class="col-8 bg-primary">
+                                <div id="demo" class="carousel slide" data-ride="carousel" style="background-color:lightblue"> 
+                                       
+                                    <ul class="carousel-indicators">
+                                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                          <li data-target="#demo" data-slide-to="1"></li>
+                                          <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+
+                                    <div class="carousel-inner">
+                                       <div style="background-color:lightblue">
+                                            <div id="buttol" > <h3 id="fontp"> <img id="tecik"  src="./images/ball.png"  alt="ball">Quotes Of The Day <img id="tecik"  src="./images/ball.png"  alt="ball"/></h3></div>
+                                       </div> 
+                                          <div class="carousel-item active">
+                                                <img src="images/quotes/ber1.jpg" alt="Los Angeles" >
+                                                <div class="carousel-caption">
+                                                    
+                                                </div>   
+                                          </div>
+
+                                          <div class="carousel-item">
+                                                <img src="images/quotes/ber2.jpg" alt="Chicago" >
+                                                <div class="carousel-caption">
+                                                    
+                                                </div>   
+                                          </div>
+
+                                          <div class="carousel-item">
+                                                <img src="images/quotes/goku1.jpg" alt="New York" >
+                                                <div class="carousel-caption">
+                                                    
+                                                </div>   
+                                            </div>
+
+                                    </div>
+
+                                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                          <span class="carousel-control-prev-icon"></span>
+                                        </a>
+
+                                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                                          <span class="carousel-control-next-icon"></span>
+                                        </a>
+                                </div>
+                        </div>
+                    </div>
+        
+            </div><br/>    
+
+            
+
+ <!-- scriptused-->
+          <script src="script.js"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+
+<footer style="background-color:rgba(37, 37, 41, 0.904)" >
+
+        <div class="footer-copyright text-center py-3" style="color:whitesmoke">© 2019 Copyright:
+            <a href="#navbur"> Mus&Bros</a>
+        </div>
+
+</footer>
+     
+
+</html>

@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+ #ite{
+    overflow: hidden;
+    height: 400px;
+  } 
+  
+  .scenery {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #D7EFF7;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    overflow: hidden;
+    animation: skysetting 12s infinite;
+  }
+
+  .goku{
+      width: 200px;
+      height:170px;
+      position: absolute;
+      right: -200px;
+      top: 10px;
+  }
+  
+  .cloud, .cloud {
+    background-color: #fafaff;
+    width: 120px;
+    height: 102px;
+    border-radius: 50%;
+    position: absolute;
+    right: -200px;
+    top: 10px;
+  }
+ 
+  .goku.flip, .cloud.flip, .cloud.flip {
+    transform: scaleX(-1);
+  }
+  .cloud.left, .cloud.left {
+    top: 60px;
+    left: -200px;
+    animation: toright 25s infinite ease-in-out;
+    animation-delay: 2s;
+  }
+  .goku.right,.cloud.right, .cloud.right {
+    top: 120px;
+    right: 0px;
+    animation: toleft 20s infinite ease-in;
+  }
+  .cloud.faster, .cloud.faster {
+    animation-duration: 15s;
+  }
+  .cloud.lower, .cloud.lower {
+    top: 200px;
+    animation-delay: 4s;
+  }
+  .cloud.bigger, .cloud.bigger {
+    transform: scale(1.2);
+  }
+  .cloud:after, .cloud:after {
+    content: "";
+    background-color: #fafaff;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 84px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .cloud:before, .cloud:before {
+    content: "";
+    background-color: #fafaff;
+    position: absolute;
+    left: -25px;
+    bottom: -10px;
+    width: 96px;
+    height: 84px;
+    border-radius: 50%;
+  }
+  
+  .sun {
+    transform: translate(-50%, 50%);
+    left: 50%;
+    position: relative;
+    box-sizing: border-box;
+    width: 140px;
+    height: 140px;
+    background-color: #ffd93b;
+    border-radius: 70px;
+    animation: glow 4s infinite, rise 12s infinite ease-in-out;
+    border-color: rgba(255, 217, 59, 0.4);
+    border-width: 15px;
+    border-style: solid;
+    background-clip: content-box;
+    margin-top: 0px;
+  }
+  
+  .mountains {
+    margin-top: -135px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    position: absolute;
+    left: 45%;
+    bottom: 180px;
+    transform: translate(-50%, 0%);
+  }
+  .mountains:before, .mountains:after {
+    content: "";
+    border: 180px solid transparent;
+    border-bottom: 180px solid #95BF13;
+    position: absolute;
+  }
+  .mountains:after {
+    animation: mountain 12s infinite;
+  }
+  .mountains:before {
+    margin-left: 180px;
+    bottom: -180px;
+    border-bottom-color: #7FA507;
+    border-bottom-width: 135px;
+    animation: mountain2 12s infinite;
+  }
+  
+  @keyframes mountain {
+    0% {
+      border-bottom-color: #BDD66E;
+    }
+    10% {
+      border-bottom-color: #B0D627;
+    }
+    75% {
+      border-bottom-color: #95BF13;
+    }
+    80% {
+      border-bottom-color: #729113;
+    }
+    90% {
+      border-bottom-color: #3B0659;
+    }
+    100% {
+      border-bottom-color: #BDD66E;
+    }
+  }
+  @keyframes mountain2 {
+    0% {
+      border-bottom-color: #b4d05a;
+    }
+    10% {
+      border-bottom-color: #9ec023;
+    }
+    75% {
+      border-bottom-color: #83a811;
+    }
+    80% {
+      border-bottom-color: #607a10;
+    }
+    90% {
+      border-bottom-color: #2b0441;
+    }
+    100% {
+      border-bottom-color: #b4d05a;
+    }
+  }
+  @keyframes skysetting {
+    0% {
+      background-color: #ffffff;
+    }
+    10% {
+      background-color: #D7EFF7;
+    }
+    70% {
+      background-color: #4BCCEF;
+    }
+    80% {
+      background-color: #FF7C3B;
+    }
+    90% {
+      background-color: #220854;
+    }
+    100% {
+      background-color: #ffffff;
+    }
+  }
+  @keyframes rise {
+    0% {
+      top: 110%;
+      transform: scale(0.5);
+    }
+    30% {
+      top: 0%;
+      transform: scale(1);
+      background-color: #FFD93B;
+    }
+    70% {
+      top: 0%;
+      transform: scale(1);
+      background-color: white;
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    100% {
+      top: 110%;
+      transform: scale(0.5);
+    }
+  }
+  @keyframes toright {
+    0% {
+      left: -150px;
+    }
+    50% {
+      left: 120%;
+    }
+    100% {
+      left: -150px;
+    }
+  }
+  @keyframes toleft {
+    0% {
+      right: -150px;
+    }
+    50% {
+      right: 120%;
+    }
+    100% {
+      right: -150px;
+    }
+  }
+  @keyframes glow {
+    0% {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    50% {
+      border-color: rgba(255, 217, 58, 0.2);
+      background-color: #ffd93a;
+      border-width: 0.3px;
+      margin-left: 0.3px;
+      margin-top: 0.3px;
+    }
+    100% {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+  }
+  
+.jumbotron{
+
+    background-image: url("images/goku.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+}
+
+.typewrite{
+    color: rgb(36, 51, 255);
+    font-family: 'Staatliches';
+   
+}
+#greet{
+    height : 360px;
+   
+}
+
+.topad{
+ padding-left: 60px;
+ padding-top: 20px;
+ text-align: center;
+   
+}
+
+#toper{
+    height: 475px;  
+}
+.font{
+    font-family: "Comic Sans MS", "Comic Sans";
+   
+}
+#navbur img{
+    width:44px;
+    height:46px;
+    margin-right: 5px;
+}
+
+#logo{
+   width: 230px;
+   
+}
+.carousel-inner img {   
+    width: 500px;
+    height: 400px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 475px;
+  }
+
+#slidesikit{
+    padding-left: 0;
+    padding-right: 0; 
+}
+.carda {
+    max-width: 745px;
+}
+#cardanote{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#buttol{
+    background-color: lightblue;
+    border: #220854;
+    max-width: 650px;
+    display: inline-block;
+    justify-content: center;
+}
+#tecik{
+    width:44px;
+    height:46px;
+    
+
+}
+
+#fontp{
+    font-family: "Permanent Marker"
+}
+
